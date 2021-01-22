@@ -54,18 +54,20 @@ cp ~/.hammerspoon/config-example.lua ~/.hammerspoon/private/config.lua
 | **快捷文字输入** | 是用`\`加关键字进行快捷文字输入              | 输入 `\t1` 将自动输入`15057466****`   |
 | **窗口管理**     | 进入窗口管理模式                             | `Option` + `R`                        |
 | **显示时间**     | 显示当前时间日期                             | `Option` + `T`                        |
+| **网站快速打开** | 打开网站列表,选择后自动用默认浏览器打开 | `Option` + `O`                      |
 | **应用快速切换** | 显示窗口提示，按下对应应用显示的字母快速切换 | `Option` + `tab`                      |
 | **历史剪切板**   | 历史剪切板，选择对应的输入到当前输入框       | `Option` + `C`                        |
 | **实时网速**     | 顶部实时显示网速                             | 默认开启                              |
 
 ## 预览:
 
-![帮助面板](https://gitee.com/moking1997/img-oss/raw/master/2021/01/22/WeChatWorkScreenshot_6c2f0628-1889-4f42-af4f-53a5ac27fcc7.png)
-![应用快速切换](https://gitee.com/moking1997/img-oss/raw/master/2021/01/22/WeChatWorkScreenshot_f8d12fe3-1b7c-452d-b750-72a5eb5dafde.png)
-![历史剪切板](https://gitee.com/moking1997/img-oss/raw/master/2021/01/22/WeChatWorkScreenshot_26a92915-06fa-4108-bf2d-e38bcbf507ab.png)
-![实时网速](https://gitee.com/moking1997/img-oss/raw/master/2021/01/22/WeChatWorkScreenshot_cf4ed2b0-5f51-4294-a561-e743c763d65c.png)
-![窗口管理](https://gitee.com/moking1997/img-oss/raw/master/2021/01/22/WeChatWorkScreenshot_74263432-8459-4138-b1b6-98b846c1336a.png)
-![显示时间](https://gitee.com/moking1997/img-oss/raw/master/2021/01/22/WeChatWorkScreenshot_6e23606d-d1d2-4b6a-a6fd-3124237953fb.png)
+![帮助面板](https://imgs-1258913739.cos-website.ap-shanghai.myqcloud.com/2021/01/22/WeChatb5dcc0bba4541db83f1883dc51fede31.png)
+![应用快速切换](https://imgs-1258913739.cos-website.ap-shanghai.myqcloud.com/2021/01/22/WeChat96f6b01bd173aa358ce1a48cd7ebdd21.png)
+![网站快捷打开](https://imgs-1258913739.cos-website.ap-shanghai.myqcloud.com/2021/01/22/WeChat6762619376b18d30fa41f7673f90e6c5.png)
+![历史剪切板](https://imgs-1258913739.cos-website.ap-shanghai.myqcloud.com/2021/01/22/WeChat683794c434a018337a74f8b89f21893a.png)
+![实时网速](https://imgs-1258913739.cos-website.ap-shanghai.myqcloud.com/2021/01/22/WeChat109c5b4dc369f8ad703917ce899e684e.png)
+![窗口管理](https://imgs-1258913739.cos-website.ap-shanghai.myqcloud.com/2021/01/22/WeChat928b479fa2a746edfb0c92fe954ee96a.png)
+![显示时间](https://imgs-1258913739.cos-website.ap-shanghai.myqcloud.com/2021/01/22/WeChat6f83d77d56d1f17822cb74ae1810a48f.png)
 
 ## 参考：
 
