@@ -34,11 +34,11 @@ local function data_diff()
     else
         obj.kbout = string.format("%6.2f", out_diff/1024) .. ' kb/s'
     end
-    local disp_str = '⥄ ' .. obj.kbout .. ' ⥂ ' .. obj.kbin
+    local disp_str = '⥄' .. obj.kbout .. '  ⥂' .. obj.kbin
     if obj.darkmode then
-        obj.disp_str = hs.styledtext.new(disp_str, {font={size=9.0, color={hex="#FFFFFF"}}})
+        obj.disp_str = hs.styledtext.new(disp_str, {font={size=8.0, color={hex="#FFFFFF"}}})
     else
-        obj.disp_str = hs.styledtext.new(disp_str, {font={size=9.0, color={hex="#000000"}}})
+        obj.disp_str = hs.styledtext.new(disp_str, {font={size=8.0, color={hex="#000000"}}})
     end
     obj.menubar:setTitle(obj.disp_str)
     obj.inseq = in_seq
@@ -54,6 +54,17 @@ function obj:rescan()
     obj.interface = hs.network.primaryInterfaces()
     obj.darkmode = hs.osascript.applescript('tell application "System Events"\nreturn dark mode of appearance preferences\nend tell')
     local menuitems_table = {}
+    -- add battery status
+    local batteryWatts = string.format("%6.2f", hs.battery.watts()) .. 'W'
+    local batteryRemaining = hs.battery.timeRemaining() .. 'min'
+    local battery_str =  "Power:" .. batteryWatts .. ' Remain:' .. batteryRemaining
+    table.insert(menuitems_table, {
+        title = battery_str,
+        tooltip = "Copy battery_str to clipboard",
+        fn = function() hs.pasteboard.setContents(battery_str) end
+    })
+
+
     if obj.interface then
         -- Inspect active interface and create menuitems
         local interface_detail = hs.network.interfaceDetails(obj.interface)
