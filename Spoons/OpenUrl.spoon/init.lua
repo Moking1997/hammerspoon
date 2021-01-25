@@ -21,10 +21,6 @@ if not OpenUrl_list then
             ["subText"] = "https://www.baidu.com/",
         },
         { 
-            ["text"] = "PMS",
-            ["subText"] = "http://pms.diwudai.com/index.php?m=my&f=index",
-        },
-        { 
             ["text"] = "Github",
             ["subText"] = "https://github.com/",
         },

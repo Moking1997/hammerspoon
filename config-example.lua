@@ -25,7 +25,7 @@ ShowApp_list = {
     {
         key = 'alt',
         letter = 'q',
-        name = '企业微信'
+        name = 'QQ'
     },
     {
         key = 'alt',
@@ -45,10 +45,6 @@ OpenUrl_list = {
     { 
         ["text"] = "Baidu",
         ["subText"] = "https://www.baidu.com/",
-    },
-    { 
-        ["text"] = "PMS",
-        ["subText"] = "http://pms.diwudai.com/index.php?m=my&f=index",
     },
     { 
         ["text"] = "Github",
@@ -93,11 +89,6 @@ QuickText_list = {
     {
         ["type"] = "search",
         ["text"] = "https://github.com/search?q=",
-    },
-    -- open http://localhost:post 
-    ["p"] =
-    {
-        ["type"] = "post",
     },
     --  expand text
     ["t1"] =
