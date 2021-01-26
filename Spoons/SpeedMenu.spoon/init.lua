@@ -55,14 +55,15 @@ function obj:rescan()
     obj.darkmode = hs.osascript.applescript('tell application "System Events"\nreturn dark mode of appearance preferences\nend tell')
     local menuitems_table = {}
     -- add battery status
-    local batteryWatts = string.format("%6.2f", hs.battery.watts()) .. 'W'
-    local batteryRemaining = hs.battery.timeRemaining() .. 'min'
-    local battery_str =  "Power:" .. batteryWatts .. ' Remain:' .. batteryRemaining
-    table.insert(menuitems_table, {
-        title = battery_str,
-        tooltip = "Copy battery_str to clipboard",
-        fn = function() hs.pasteboard.setContents(battery_str) end
-    })
+    -- not support m1 mac
+    -- local batteryWatts = string.format("%6.2f", hs.battery.watts()) .. 'W'
+    -- local batteryRemaining = hs.battery.timeRemaining() .. 'min'
+    -- local battery_str =  "Power:" .. batteryWatts .. ' Remain:' .. batteryRemaining
+    -- table.insert(menuitems_table, {
+    --     title = battery_str,
+    --     tooltip = "Copy battery_str to clipboard",
+    --     fn = function() hs.pasteboard.setContents(battery_str) end
+    -- })
 
 
     if obj.interface then

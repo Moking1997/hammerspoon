@@ -116,7 +116,7 @@ end
 
 local function expandText(keys)
     hs.pasteboard.setContents(keys.text)
-    for i = 1, #obj.keyword  do
+    for i = 1, #obj.keyword + 1  do
         hs.eventtap.keyStroke({ "" }, "delete", 0)
     end
     hs.eventtap.keyStroke({ "cmd" }, "v", 0)
