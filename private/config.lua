@@ -6,6 +6,7 @@ Spoon_list = {
     "WinWin", -- 窗口管理
     "OpenUrl", -- 快捷链接列表
     "QuickText", -- 快捷文字扩展
+    "KSheet", -- 快捷键
 }
 
 -- 重新加载Hammerspoon配置
@@ -105,5 +106,16 @@ QuickText_list = {
     {
         ["type"] = "text",
         ["text"] = "moking****@**.com",
+    },
+    ["r"] =
+    {
+        ["type"] = "text",
+        ["text"] = "* rem",
+    },
+    -- todo
+    ["todo"] =
+    {
+        ["type"] = "text",
+        ["text"] = "//TODO:",
     },
 }

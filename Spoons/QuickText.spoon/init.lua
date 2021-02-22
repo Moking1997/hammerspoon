@@ -116,7 +116,7 @@ end
 
 local function expandText(keys)
     hs.pasteboard.setContents(keys.text)
-    for i = 1, #obj.keyword  do
+    for i = 1, #obj.keyword +1  do
         hs.eventtap.keyStroke({ "" }, "delete", 0)
     end
     hs.eventtap.keyStroke({ "cmd" }, "v", 0)
@@ -142,11 +142,14 @@ local function watchInput()
         local char = ev:getCharacters()
 
         if start then
-            word = word .. char
-            if(#word > 10 or string.sub(word,1,1)=='\\') then
+            if #word > 0 and keyCode==51 then
+                 word = string.sub(word, 1, -2)
+            elseif #word == 0 and keyCode==51  then
                 word = ''
                 start = false
                 return;
+            else
+                 word = word .. char
             end
 
             if QuickText_list[word] then
